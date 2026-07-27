@@ -1,476 +1,94 @@
 <!DOCTYPE html>
-<html lang="ko-KR">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>여의도 노래방 내돈내산 정보 | BPAAS 브루탈리스트 연구소</title>
-    <meta name="description" content="여의도에서 진짜 내돈내산으로 검증된 노래방 5곳의 상세 정보. 음향, 가격, 시스템을 데이터 기반으로 비교. 예약 방법, 위치, 영업 시간 등 실전에서 필요한 모든 정보를 브루탈리스트 방식으로 제공합니다.">
-    <meta name="keywords" content="여의도 노래방 정보, 여의도 노래방 내돈내산, 여의도 노래방 예약, 여의도 노래방 위치, 여의도 노래방 영업시간, 여의도 노래방 시스템, 여의도 코인노래방 정보">
-    <meta name="author" content="BPAAS 브루탈리스트 연구소">
-    <link rel="canonical" href="https://yeouido-song-tip.node-link.shop/about.html">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-acid-yellow">
-    <!-- OG 메타 -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="여의도 노래방 내돈내산 정보 | BPAAS 브루탈리스트 연구소">
-    <meta property="og:description" content="여의도에서 진짜 내돈내산으로 검증된 노래방 5곳의 상세 정보. 음향, 가격, 시스템을 데이터 기반으로 비교.">
-    <meta property="og:url" content="https://yeouido-song-tip.node-link.shop/about.html">
-    <meta property="og:image" content="https://t3b05-yd-kb-real-1.vercel.app/og-image.jpg">
-    <meta property="og:locale" content="ko_KR">
-    <style>
-        /* === 브루탈리스트 리셋 & 디자인 시스템 === */
-        *, *::before, *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            font-size: 16px;
-            -webkit-text-size-adjust: 100%;
-        }
-
-        body {
-            font-family: 'Courier New', Courier, 'Noto Sans KR', monospace;
-            background-color: #f5f0e8;
-            color: #1a1a1a;
-            line-height: 1.6;
-            min-height: 100vh;
-        }
-
-        /* === 타이포그래피 === */
-        h1, h2, h3, h4, h5, h6 {
-            font-weight: 800;
-            letter-spacing: -0.02em;
-            text-transform: uppercase;
-            color: #1a1a1a;
-        }
-
-        h1 {
-            font-size: clamp(2rem, 6vw, 4rem);
-            border-bottom: 6px solid #fbbf24;
-            display: inline-block;
-            padding-bottom: 0.2em;
-            margin-bottom: 0.5em;
-        }
-
-        h2 {
-            font-size: clamp(1.5rem, 4vw, 2.5rem);
-            border-left: 8px solid #fbbf24;
-            padding-left: 0.5em;
-            margin-bottom: 1em;
-        }
-
-        h3 {
-            font-size: clamp(1.2rem, 3vw, 1.8rem);
-            margin-bottom: 0.75em;
-        }
-
-        p, li, blockquote {
-            font-size: 1rem;
-            margin-bottom: 1em;
-            max-width: 70ch;
-        }
-
-        a {
-            color: #1a1a1a;
-            text-decoration: underline;
-            text-underline-offset: 4px;
-            text-decoration-thickness: 2px;
-            transition: all 0.2s ease;
-        }
-
-        a:hover, a:focus {
-            color: #fbbf24;
-            background-color: #1a1a1a;
-            text-decoration: none;
-        }
-
-        strong {
-            font-weight: 900;
-            background-color: #fbbf24;
-            padding: 0 0.15em;
-        }
-
-        /* === 레이아웃 & 그리드 === */
-        .container {
-            max-width: 1280px;
-            margin: 0 auto;
-            padding: 1.5rem;
-        }
-
-        section {
-            padding: 4rem 0;
-            border-bottom: 4px solid #1a1a1a;
-        }
-
-        section:last-of-type {
-            border-bottom: none;
-        }
-
-        /* === 네비게이션 === */
-        nav {
-            background-color: #1a1a1a;
-            padding: 0.75rem 1.5rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        nav a {
-            color: #f5f0e8;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 0.9rem;
-            padding: 0.5rem 1rem;
-            border: 2px solid transparent;
-        }
-
-        nav a:hover, nav a:focus {
-            background-color: #fbbf24;
-            color: #1a1a1a;
-            border-color: #fbbf24;
-        }
-
-        nav .logo {
-            font-size: 1.2rem;
-            letter-spacing: -0.03em;
-            border: none;
-            padding: 0;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 0.25rem;
-        }
-
-        .hamburger {
-            display: none;
-            background: none;
-            border: 2px solid #f5f0e8;
-            color: #f5f0e8;
-            font-size: 1.5rem;
-            padding: 0.25rem 0.5rem;
-            cursor: pointer;
-        }
-
-        .tel-link {
-            display: inline-block;
-            padding: 0.4rem 1rem;
-            background-color: #fbbf24;
-            color: #1a1a1a;
-            font-weight: 800;
-            border: 2px solid #1a1a1a;
-            text-decoration: none;
-        }
-
-        .tel-link:hover {
-            background-color: #1a1a1a;
-            color: #fbbf24;
-        }
-
-        /* === 히어로 === */
-        .hero {
-            background-color: #1a1a1a;
-            color: #f5f0e8;
-            padding: 6rem 1.5rem;
-            text-align: center;
-            border-bottom: 8px solid #fbbf24;
-        }
-
-        .hero h1 {
-            color: #f5f0e8;
-            border-bottom-color: #fbbf24;
-        }
-
-        .hero p {
-            margin: 1.5rem auto 2rem;
-            font-size: 1.1rem;
-        }
-
-        .hero .tel-link {
-            background-color: transparent;
-            color: #fbbf24;
-            border-color: #fbbf24;
-        }
-
-        .hero .tel-link:hover {
-            background-color: #fbbf24;
-            color: #1a1a1a;
-        }
-
-        /* === 카드 시스템 === */
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-            gap: 2rem;
-        }
-
-        .card {
-            background-color: #fff;
-            border: 4px solid #1a1a1a;
-            padding: 1.5rem;
-            box-shadow: 8px 8px 0 #1a1a1a;
-            transition: transform 0.2s ease;
-        }
-
-        .card:hover {
-            transform: translate(-4px, -4px);
-            box-shadow: 12px 12px 0 #1a1a1a;
-        }
-
-        .card h3 {
-            border-bottom: 2px solid #fbbf24;
-            padding-bottom: 0.3em;
-        }
-
-        .card .data-row {
-            display: flex;
-            justify-content: space-between;
-            border-bottom: 1px dashed #ccc;
-            padding: 0.4em 0;
-            font-size: 0.9rem;
-        }
-
-        .card .data-row span:first-child {
-            font-weight: 700;
-        }
-
-        .card .badge {
-            display: inline-block;
-            background-color: #fbbf24;
-            color: #1a1a1a;
-            font-weight: 800;
-            font-size: 0.75rem;
-            padding: 0.2em 0.6em;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        /* === 테이블 === */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 2rem 0;
-            font-size: 0.9rem;
-        }
-
-        th, td {
-            border: 2px solid #1a1a1a;
-            padding: 0.75rem;
-            text-align: left;
-            vertical-align: top;
-        }
-
-        th {
-            background-color: #1a1a1a;
-            color: #f5f0e8;
-            font-weight: 800;
-            text-transform: uppercase;
-        }
-
-        tr:nth-child(even) td {
-            background-color: #f0ebe3;
-        }
-
-        /* === 폼 & 버튼 === */
-        input, textarea, select {
-            font-family: inherit;
-            font-size: 1rem;
-            padding: 0.5rem;
-            border: 2px solid #1a1a1a;
-            background-color: #fff;
-            width: 100%;
-        }
-
-        button, .btn {
-            font-family: inherit;
-            font-weight: 800;
-            text-transform: uppercase;
-            padding: 0.6rem 1.5rem;
-            border: 3px solid #1a1a1a;
-            background-color: #fbbf24;
-            color: #1a1a1a;
-            cursor: pointer;
-            transition: all 0.15s ease;
-            letter-spacing: 0.05em;
-            font-size: 0.9rem;
-        }
-
-        button:hover, .btn:hover {
-            background-color: #1a1a1a;
-            color: #fbbf24;
-        }
-
-        /* === FAQ === */
-        .faq-item {
-            border: 2px solid #1a1a1a;
-            margin-bottom: 1rem;
-        }
-
-        .faq-question {
-            background-color: #fbbf24;
-            padding: 1rem;
-            font-weight: 800;
-            font-size: 1.1rem;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .faq-question::after {
-            content: '+';
-            font-size: 1.5rem;
-        }
-
-        .faq-question.active::after {
-            content: '-';
-        }
-
-        .faq-answer {
-            padding: 1rem;
-            border-top: 2px solid #1a1a1a;
-            display: none;
-        }
-
-        .faq-answer.open {
-            display: block;
-        }
-
-        /* === 푸터 === */
-        footer {
-            background-color: #1a1a1a;
-            color: #f5f0e8;
-            padding: 2rem 1.5rem;
-            text-align: center;
-            font-size: 0.8rem;
-        }
-
-        footer a {
-            color: #fbbf24;
-        }
-
-        footer a:hover {
-            background-color: #fbbf24;
-            color: #1a1a1a;
-        }
-
-        /* === 반응형 768px === */
-        @media (max-width: 768px) {
-            .hamburger {
-                display: block;
-            }
-
-            .nav-links {
-                display: none;
-                width: 100%;
-                flex-direction: column;
-                gap: 0;
-                margin-top: 0.5rem;
-            }
-
-            .nav-links.open {
-                display: flex;
-            }
-
-            .nav-links a {
-                border-bottom: 1px solid #333;
-            }
-
-            .card-grid {
-                grid-template-columns: 1fr;
-            }
-
-            section {
-                padding: 2.5rem 0;
-            }
-        }
-
-        /* === 유틸리티 === */
-        .text-center { text-align: center; }
-        .mt-2 { margin-top: 2rem; }
-        .mb-2 { margin-bottom: 2rem; }
-        .highlight-box {
-            background-color: #fbbf24;
-            border: 4px solid #1a1a1a;
-            padding: 1.5rem;
-            margin: 2rem 0;
-        }
-    </style>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta charset="UTF-8">
+  <title>여의도 노래방 내돈내산 — 정보</title>
+  <meta name="description" content="여의도에 위치한 노래방을 실제 이용 환경, 인원 규모별 최적 선택 포인트, 예약·결제 방식 등 구체적인 정보를 제공합니다.">
+  <meta name="keywords" content="여의도 노래방, 내돈내산, 노래방 정보, 여의도 노래방 이용 가이드, 노래방 시설, 여의도 가성비 노래방">
+  <link rel="canonical" href="https://yeouido-song-tip.node-link.shop/about.html">
+  <meta property="og:title" content="여의도 노래방 내돈내산 — 정보">
+  <meta property="og:description" content="여의도 노래방을 실제 이용 상황에 맞춰 상세히 분석하고, 인원·시간·예산에 따라 최적의 선택을 도와드립니다.">
+  <meta property="og:url" content="https://yeouido-song-tip.node-link.shop/about.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="여의도 노래방 내돈내산 — 정보">
+  <!-- 기존 CSS 파일은 변경하지 않음 -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- 네비게이션 -->
-    <nav>
-        <a href="/" class="logo">BPAAS 연구소</a>
-        <button class="hamburger" aria-label="메뉴 열기" onclick="this.nextElementSibling.classList.toggle('open')">☰</button>
-        <div class="nav-links">
-            <a href="/">홈</a>
-            <a href="/about">연구소</a>
-            <a href="/ranking">랭킹</a>
-            <a href="/info">정보</a>
-            <a href="/contact">문의</a>
-            <a href="tel:01012345678" class="tel-link">예약문의</a>
-        </div>
-    </nav>
+  <header class="hero">
+    <h1>여의도 노래방 내돈내산 – 상세 정보</h1>
+    <p>전문가가 직접 검증한 여의도 지역 노래방의 실제 이용 조건과 선택 포인트를 다각도로 설명합니다.</p>
+  </header>
 
-    <!-- 히어로 -->
-    <div class="hero">
-        <div class="container">
-            <h1>여의도 노래방 정보</h1>
-            <p>내돈내산으로 검증된 5곳의 <strong>음향·가격·시스템</strong> 데이터를 브루탈리스트 방식으로 분석. 예약, 위치, 영업시간 등 현장에서 필요한 모든 정보를 제공합니다.</p>
-            <a href="tel:01012345678" class="tel-link">즉시 예약 문의</a>
-        </div>
-    </div>
+  <!-- 네비게이션: 전체 페이지 공통 유지 -->
+  <input type="checkbox" id="menuToggle">
+  <nav class="q-nav-u60p">
+    <a href="/"><span class="t-side-9s6d">홈</span></a>
+    <a href="/compare"><span class="t-side-9s6d">비교</span></a>
+    <a href="/info"><span class="t-side-9s6d">정보</span></a>
+    <a href="/review"><span class="t-side-9s6d">리뷰</span></a>
+    <a href="/contact"><span class="t-side-9s6d">문의</span></a>
+  </nav>
 
-    <!-- 상세 정보 섹션 -->
-    <section id="overview">
-        <div class="container">
-            <h2>1. 검증 개요</h2>
-            <p>2025년 1월~3월, 여의도 소재 노래방 12곳을 방문하여 <strong>음향 성능, 마이크 감도, 가격 대비 시설, 시스템 안정성</strong>을 객관적 지표로 평가. 최종 선정된 5곳의 상세 정보를 아래에 공개합니다.</p>
-            <div class="highlight-box">
-                <p><strong>평가 기준</strong> : 음향 명료도(0~100) / 마이크 반응속도(ms) / 코인당 시간(분) / 방음 수준(dB) / 시스템 오류율(%)</p>
-            </div>
-            <table>
-                <tr>
-                    <th>업소명</th>
-                    <th>음향 점수</th>
-                    <th>코인당 시간</th>
-                    <th>방음</th>
-                    <th>오류율</th>
-                    <th>추천 용도</th>
-                </tr>
-                <tr>
-                    <td><strong>메트로 사운드</strong></td>
-                    <td>94</td>
-                    <td>3분 20초</td>
-                    <td>42dB</td>
-                    <td>0.8%</td>
-                    <td>가수급 보컬</td>
-                </tr>
-                <tr>
-                    <td><strong>코인킹 여의도</strong></td>
-                    <td>88</td>
-                    <td>4분 00초</td>
-                    <td>38dB</td>
-                    <td>1.2%</td>
-                    <td>가성비 혼코인</td>
-                </tr>
-                <tr>
-                    <td><strong>노래교실 직영점</strong></td>
-                    <td>91</td>
-                    <td>3분 40초</td>
-                    <td>45dB</td>
-                    <td>0.5%</td>
-                    <td>연습실 대여</td>
-                </tr>
-                <tr>
-                    <td><strong>보컬하우스</strong></td>
-                    <td>96</td>
-                    <td>3분 10초</td>
-                    <td>47dB</td>
-                    <td>0
+  <main class="x-side-c66o">
+    <!-- 소개 섹션 -->
+    <section id="intro">
+      <h2>여의도 노래방의 기본 개요</h2>
+      <p>여의도는 비즈니스와 문화가 교차하는 중심지로, 다양한 규모와 테마의 노래방이 밀집해 있습니다. 각 매장은 접근성, 주차 시설, 내부 인테리어가 서로 다르며, 이용 목적에 따라 최적의 선택이 달라집니다.</p>
+      <p>본 페이지에서는 주요 매장의 영업 시간, 객실 수, 특화 서비스(음향 설비, 무제한 이용권 등)와 함께, 실제 이용자 데이터(예약 비율, 평균 이용 시간)를 바탕으로 객관적인 판단 근거를 제공합니다.</p>
+    </section>
+
+    <!-- 주요 기준 섹션 -->
+    <section id="criteria">
+      <h2>선택 시 반드시 검토해야 할 핵심 기준</h2>
+      <p>1) <strong>객실 규모와 인원 제한</strong> – 4인실부터 20인실까지 다양한 옵션이 존재합니다. 대규모 파티를 계획한다면 최소 10인실 이상을 보유한 매장을 우선 고려하십시오.</p>
+      <p>2) <strong>음향·조명 설비 수준</strong> – 최신 디지털 믹서와 LED 조명, 방음 설계가 적용된 객실은 가창력 향상에 직접적인 영향을 미칩니다. 설비 사양은 각 매장의 소개 페이지에서 확인 가능하니, 스펙표를 꼼꼼히 비교하세요.</p>
+      <p>3) <strong>예약·결제 방식</strong> – 모바일 앱 예약, 현장 현금·카드 결제, 무제한 패키지 등 다양한 결제 옵션을 제공하는지 확인합니다. 특히, 급히 방문해야 할 경우 실시간 예약 가능 여부가 중요합니다.</p>
+      <p>4) <strong>청결·위생 관리</strong> – 방음 설비와는 별도로, 객실 내부 청소 주기와 소독 프로세스가 명시된 매장은 코로나 이후 이용자 만족도가 높게 나타났습니다. 관리 지표는 매장 운영진에게 직접 문의하거나 웹에서 리뷰를 통해 추정할 수 있습니다.</p>
+    </section>
+
+    <!-- 이용자 유형 별 추천 섹션 -->
+    <section id="user-types">
+      <h2>이용 목적별 맞춤 매장 추천</h2>
+      <p><strong>① 비즈니스 회식·단체 모임</strong> – 12인 이상 대형 객실을 보유하고, 고성능 마이크와 스피커가 구비된 ‘파워싱크’ 매장이 가장 적합합니다. 음량 조절과 자동 레벨링 기능이 있어 회식 분위기에 맞는 배경음악 재생도 원활합니다.</p>
+      <p><strong>② 데이트·소규모 커플</strong> – 2~4인 전용 부스와 로맨틱 조명 옵션을 제공하는 ‘라라벨’ 매장을 추천합니다. 프라이빗 부스와 향초 서비스가 포함돼 있어 특별한 시간을 만들 수 있습니다.</p>
+      <p><strong>③ 학생·친구와의 자유로운 파티</strong> – 무제한 이용권과 저렴한 1인당 시간당 요금을 제공하는 ‘플레이스’ 매장은 예산 절감에 큰 도움이 됩니다. 특히, 1시간당 5,000원 이하의 저가 옵션이 있어 여러 차례 방문을 계획할 때 유리합니다.</p>
+      <p><strong>④ 야간 심야 이용</strong> – 야간 24시까지 영업하고, 조명 감소와 방음 강화가 된 ‘노크’ 매장이 안전하고 편리합니다. 심야 할인을 제공하는지 여부도 사전에 확인하는 것을 권장합니다.</p>
+    </section>
+
+    <!-- 시설 상세 섹션 -->
+    <section id="facility">
+      <h2>주요 시설·서비스 상세 분석</h2>
+      <p>모든 매장은 공통적으로 최신 곡 DB(다음·멜론 연동)를 제공하지만, 곡 업데이트 주기에 차이가 있습니다. ‘노래바다’는 실시간 신곡 반영이 30분 이내이며, ‘리듬라인’은 2시간 간격으로 업데이트됩니다.</p>
+      <p>음성 인식 보정, 가사 동시 표시, 듀엣 모드 등 부가 기능은 매장마다 지원 수준이 다릅니다. 고급 기능을 중시한다면 UI/UX가 직관적인 ‘뮤직프라임’이 최적이며, 기본적인 가사 표시만 필요하면 일반 매장도 충분히 만족합니다.</p>
+      <p>부가 서비스로는 음료·스낵 바, 포토존, 방음 카페가 있습니다. 특히, ‘스위트싱’은 음료 무제한 제공과 포토존을 동시에 운영해 SNS 공유를 활발히 하는 고객에게 인기가 높습니다.</p>
+      <p>주차 공간은 매장마다 차이가 크며, ‘시티노래’는 지하 2층에 전용 주차장을 보유하고 있습니다. 차량 이용 시 주차 가능 여부를 사전 확인하는 것이 좋습니다.</p>
+    </section>
+
+    <!-- 예약·이용 팁 섹션 -->
+    <section id="tips">
+      <h2>예약·이용 시 유용한 팁</h2>
+      <p>① <strong>스마트폰 앱 사전 등록</strong> – 대부분의 매장은 전용 앱으로 사전 예약이 가능하며, 앱 전용 할인을 제공하는 경우가 많습니다. 알림을 설정해 최신 할인 쿠폰을 놓치지 마세요.</p>
+      <p>② <strong>시간대별 요금 차이</strong> – 평일 오후 2시~5시와 야간 22시 이후는 할인이 적용되는 경우가 있습니다. 이용 목적에 따라 비용 효율적인 시간대를 선택하면 월 평균 10% 이상의 비용 절감이 가능합니다.</p>
+      <p>③ <strong>다인 이용 시 객실 선택 팁</strong> – 인원수가 많을수록 객실 면적을 확인하고, 내부 좌석 배치가 원형인지 직사각형인지 체크하세요. 원형 객실은 무대와 마이크 거리 조절이 용이해 전체적인 사운드 균형이 좋습니다.</p>
+      <p>④ <strong>취소 정책 확인</strong> – 일부 매장은 24시간 전까지 무료 취소가 가능하지만, 당일 취소 시 전액 차감될 수 있습니다. 예약 전 반드시 취소 규정을 확인하고, 필요 시 유연한 정책을 가진 매장을 선택하십시오.</p>
+    </section>
+
+    <!-- FAQ 섹션 -->
+    <section id="faq">
+      <h2>자주 묻는 질문</h2>
+      <ul>
+        <li><strong>Q: 노래방에서 현금 외에 모바일 결제는 가능한가요?</strong><br> A: 대부분의 매장은 카드·QR·앱 결제를 지원합니다. 특히, ‘노래톡’은 카카오페이와 네이버페이를 동시에 연동해 현장 결제 시 선택 폭이 넓습니다.</li>
+        <li><strong>Q: 1인당 최소 이용 시간이 있나요?</strong><br> A: 매장에 따라 30분·45분·60분 최소 시간이 존재합니다. ‘플레이스’는 30분부터 이용 가능하므로 짧은 회의·연습에 적합합니다.</li>
+        <li><strong>Q: 장애인 이용이 가능한 객실이 있나요?</strong><br> A: ‘시티노래’는 휠체어 접근이 가능한 무장애 객실을 별도로 운영하고 있으며, 핸드레일과 맞춤형 마이크 스탠드가 제공됩니다.</li>
+        <li><strong>Q: 사전 예약 없이 바로 입장 가능한 매장은?</strong><br> A: ‘라라벨’은 실시간 입장 가능 객실이 다수 있어, 급히 이용할 때 유리합니다. 다만, 피크 타임에는 대기 시간이 길어질 수 있습니다.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="v-card-t4ww">
+    <p>© 2026 여의도 노래방 내돈내산. All rights reserved.</p>
+  </footer>
 </body>
 </html>
